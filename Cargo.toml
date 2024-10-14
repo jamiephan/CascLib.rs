@@ -1,6 +1,20 @@
 [package]
 name = "casclib"
-version = "0.1.0"
+version = "0.0.0-dev"
 edition = "2021"
+build = "build.rs"
+license  = "MIT"
+description = "An open-source implementation of library for reading CASC storages from Blizzard games since 2014"
+documentation = "http://www.zezula.net/en/casc/casclib.html"
+homepage = "https://github.com/jamiephan/CascLib.rs"
+repository = "https://github.com/jamiephan/CascLib.rs"
+readme = "README.md"
+
+keywords = ["casc", "casclib", "storm", "stormlib", "blizzard", "battlenet", "mpq"]
+categories = ["external-ffi-bindings", "game-development", "multimedia"]
+
 
 [dependencies]
+
+[build-dependencies]
+bindgen = "0.60.1"
